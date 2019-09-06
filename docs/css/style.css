@@ -1,0 +1,209 @@
+@charset "utf-8";
+body { margin: 0; padding: 0; min-width: 320px; background:#f3f3f3; font-size: 15px; font-family: 'Josefin Sans','Noto Sans KR','Nanum Gothic',sans-serif; }
+.titleMenu {width:100%; text-align:center; font-size:40px; color:#666; font-weight:400; letter-spacing: 5px;}
+.titleMenu:after {content:''; display:block; width:105px; height:2px; margin:10px auto 0; background:#cac9c7;}
+.content {width:1280px; margin:75px auto 0;}
+.slideon { opacity: 0; transform: translateY(30%); transition-duration: .7s;}
+.slide { opacity: 1; transform: translateY(0%);}
+.main-title { text-align:center; font-family: 'Josefin Sans', sans-serif; font-weight: 700; font-size:3em; letter-spacing: 15px; color:#646464;}
+.main-title-line {left:50%; display:block; width:0; height:2px; background:#27c5bc; margin:15px auto 0; transition-duration: 1.5s;}
+.main-title-line.slide {left:0; width:100px;}
+.clear {clear:both;}
+
+#wrap {width:100%;}
+.inner {width:1280px; margin:0 auto;}
+#container {position:relative; width:1280px; margin:0 auto;}
+
+#nav {position: absolute; z-index: 9999; top:0; left:3%;}
+#nav h1 {position: absolute; top:20px; left:0;transition:all .2s;}
+#nav h1 img {width:85px; transition:all .4s;}
+
+/* 메인 */
+#main-visual {position:relative; }
+#main-visual .main-visual-wrap {position:relative; background:#e0e0e0; transform: skew(0deg,-4deg); overflow: hidden; top:-110px; height:95vh; transition: all .2s;}
+#main-visual .main-bg {position: relative; height:100%;  top:-90px;   background:#e0e0e0; }
+#main-visual .main-img {background:#e0e0e0 url("../images/main-bg.jpg")no-repeat right bottom; background-size: 70%; display:block; height:100%; transform: skew(0deg, 4deg);}
+#main-visual:after {content:""; position: absolute; bottom:90px; right: 0; width: 75%;height: 190px; background: #27c5bc;z-index: -1; transform: skew(0deg,4deg);}
+#main-visual .inner div {position: absolute; top:60%; transform: translateY(-50%) skew(0deg,4deg); z-index: 200;}
+#main-visual .inner div h2 {opacity: 0; position:relative; bottom:-15px; color:#646464; font-size: 5em; letter-spacing: 30px; font-weight: 600;}
+#main-visual .inner div span {display:block; background:#27c5bc; width:0; height:3px; margin:20px 0 50px;}
+#main-visual .inner div p {opacity: 0; position:relative; bottom:-15px; color:#9c9c9c; font-size:2em; letter-spacing: 10px; line-height: 2;}
+
+
+/* intro */
+#intro {margin-top:15%;}
+#intro .intro-wrap {margin-top:10%;}
+#intro .intro-wrap div {float:left;}
+#intro .intro-wrap .intro-img {width:55%;}
+#intro .intro-wrap .intro-img img {width:100%;}
+#intro .intro-wrap .intro-img img.slideon {transform:translateY(0%) translateX(-5%);}
+#intro .intro-wrap .intro-img img.slide {transform:translateY(0%) translateX(0);}
+#intro .intro-wrap .intro-title {width:40%; margin-top:40px; text-align:center; font-size:2.8em; font-weight: bold; letter-spacing: 10px; line-height: 1.5; padding-left:50px; box-sizing: border-box; color:#646464;}
+#intro .intro-wrap .intro-title.slideon {transform:translateY(0%) translateX(5%);}
+#intro .intro-wrap .intro-title.slide {transform:translateY(0%) translateX(0);}
+#intro .intro-wrap .intro-title span {display:inline-block; color:#27c5bc; font-size: 1.3em}
+#intro .intro-wrap .intro-title span.intro-C {transform: rotate(-15deg);}
+#intro .intro-wrap .intro-title span.intro-R {transform: rotate(12deg);}
+
+
+/* skills */
+#skills {margin-top:20%;}
+#skills ul {margin-top:7%;}
+#skills ul li {position:relative; float:left; width:20%; text-align:center; line-height:1.2;}
+#skills ul li:last-child {margin-right:0;}
+#skills ul li canvas {margin:0 auto;}
+#skills ul li .percent {position:absolute; top:40%; left:0; right:0; transform:translateY(-50%); width:100%; text-align:center; font-size:22px;  font-family:"Nanum Gothic"; font-weight: bold;}
+#skills ul li h4 {font-size:20px; font-family:"Nanum Gothic"; margin-top:20px; color:#424242;}
+
+
+/* works */
+#works {margin-top:20%; padding-bottom:10%;}
+#works .section {margin:12% 0 70%;}
+#works .section  > div {float:left;}
+#works .section .thumb {width:60%; float:left;}
+#works .section .work-content {position:relative; width:40%; float:right; text-align:right;}
+#works .section .work-content h2 {position:relative; color:#646464; font-size: 3.5em; margin:80px 0 30px; line-height:1.3; font-family: "Nanum Gothci";}
+#works .section .work-content h2 span.green {display:block; color:#27c5bc;}
+#works .section .work-content .number {position:absolute; top:-65px; z-index:-1; right:20%; color:#e1dede; font-family:"Nanum Gothic"; font-weight:bold; font-size:2em; letter-spacing: 7px;}
+#works .section .work-content p {margin:15px 0; font-size:17px; color:#646464; letter-spacing: -0.7px;}
+#works .section .work-content .btn-area { margin-top:60px; }
+#works .section .work-content .btn-area a {display:block; color:#646464; border:1px solid #27c5bc; width:150px; height:35px; line-height: 35px; text-align:center; float:right; font-family:"Nanum Gothic"; transition: all .2s;}
+#works .section .work-content .btn-area a:hover {background:#27c5bc; color:#fff;}
+
+#works .sectionR .thumb {float:right; text-align:right;}
+#works .sectionR .work-content {float:left; text-align:left;}
+#works .sectionR .work-content .btn-area a {float:left;}
+#works .sectionR .work-content .number {right:auto; left:30%;}
+
+#works .section03 .work-content .number {right:60%;}
+#works .section04 .work-content .number {left:70%;}
+
+
+/* contact */
+#contact {background:url("../images/contact_bg.png")repeat; padding-bottom:8%;}
+#contact::before {content:''; position:relative; top:-85px; display:block; height:175px; background:#f3f3f3; transform:skew(0,5deg); box-shadow: 0 17px 11px #e1e1e1; margin-bottom: 8%;}
+#contact .contact-box {width:500px; margin:8% auto 0; padding:3% 0; line-height:2.5; text-align:center; border-style: solid; border-image: linear-gradient(to right, #62e2de 0%, #22a6c7 100%); border-image-slice: 1; border-width:1px; font-size:20px; letter-spacing:5px;}
+#contact .contact-box .name {color:#bbb;}
+#contact .contact-box .name span {color:#27c5bc;}
+#contact .contact-box .phone {color:#8d8d8d}
+#contact .contact-box .mail {color:#787878}
+
+
+
+#footer {position: relative; z-index: 10; height:70px; line-height:70px; background:#cacaca; color:#fff; text-align: center; letter-spacing: 1px;}
+
+
+/* PC Full */
+@media screen and (min-width: 1381px){}
+/* PC size */
+@media screen and (max-width: 1380px){
+	#container {width:100%;}
+	.inner {width:100%;}
+	#header h1 {left:3%;}
+	#main-visual .inner div {left:3%;}
+	#intro .intro-wrap {padding:0 2%; overflow: hidden;}
+	#skills ul {padding:0 2%;}
+	#works .section {padding:0 5%;}
+	#works .section .thumb img {width:90%;}
+}
+@media screen and (max-width: 1280px){
+	#main-visual .main-visual-wrap {height:85vh;}
+	#main-visual .inner div h2 {font-size:4.5em;}
+	#main-visual .inner div p {font-size:1.7em;}
+	#intro {margin-top:5%;}
+	#intro .intro-wrap .intro-img {width:55%;}
+	#intro .intro-wrap .intro-title {width:45%;}
+	#works .section .work-content .number {top:-55px;}
+	#works .section .work-content h2 {font-size: 3em;}
+}
+/* Notebook size */
+@media screen and (max-width: 1024px){
+	#header h1 img {width:70px;}
+	#main-visual .inner div h2 {font-size:3.8em; letter-spacing: 22px;}
+	#main-visual .inner div p {font-size:1.5em;}
+	.main-title {font-size: 2.2em;}
+	#intro .intro-wrap .intro-title {font-size:2em; padding-left: 0;}
+	#intro .intro-wrap .intro-title span {font-size: 1.2em;}
+	#skills ul li canvas {width:80%!important; height:80%!important;}
+	#skills ul li .percent {font-size:20px; top:38%;}
+	#skills ul li h4 {font-size:16px;}
+	#works .section .thumb {text-align: center;}
+	#works .section .thumb img {width:100%;}
+	#works .section01 .thumb img,
+	#works .section04 .thumb img {width:90%;}
+	#works .section .work-content .number {top:-40px;}
+	#works .section .work-content h2 {font-size:2.3em; margin:45px 0 25px;}
+	#works .section .work-content p {font-size: 15px;}
+	#works .section .work-content .btn-area {margin-top:35px;}
+	#works .section .work-content .btn-area a {font-size:13px;}
+	#contact::before {top:-45px; height:150px;}
+}
+/* Tablet size */
+@media screen and (max-width: 768px){
+	#main-visual .inner div {left:10%;}
+	.main-title {font-size:1.8em;}
+	#intro .intro-wrap .intro-img {width:100%; text-align: center;}
+	#intro .intro-wrap .intro-img img {width:80%;}
+	#intro .intro-wrap .intro-title {width:100%;}
+	#skills ul {font-size:0; text-align:center;}
+	#skills ul li {width:33.333%; display:inline-block; float:none; margin:2% 0 8%}
+	#skills ul li .percent {top:42%;}
+	#works {padding-bottom: 0;}
+	#works .section {margin:12% 0 20%;}
+	#works .section .thumb {width:100%; float:none;}
+	#works .section .work-content {width:65%; margin:0 auto; float:none; text-align:center;}
+	#works .section .work-content .btn-area a {float:none; margin:0 auto;}
+	#works .section01 .work-content .number {left:22%; right:auto;}
+	#works .section02 .work-content .number {left:20%;}
+	#works .section03 .work-content .number {left:0; right:auto;}
+	#works .section04 {margin-bottom:10%;}
+	#works .section04 .work-content .number {left:0; right:auto;}
+	#contact {padding-bottom:10%;}
+}
+/* Mobile1*/
+@media screen and (max-width: 640px){
+	#header h1 img {width:60px;}
+	#header.fixmenu h1 {top:20px;}
+	#header.fixmenu h1 img {width:45px;}
+	#main-visual .main-visual-wrap {height:75vh;}
+	#main-visual .inner div h2 {font-size: 3em; letter-spacing: 15px;}
+	#main-visual .inner div p {font-size:1.3em; letter-spacing: 6px;}
+	#main-visual .inner div span {height:2px; margin:20px 0 40px;}
+	.main-title {font-size:1.5em; letter-spacing: 10px;}
+	.main-title-line {height:1px;}
+	#intro .intro-wrap .intro-title {font-size:1.5em;}
+	#skills ul li canvas {width:70%!important; height:70%!important;}
+	#skills ul li .percent {font-size:16px; top:39%;}
+	#works .section .work-content h2 {font-size:1.8em;}
+	#works .section .work-content .number {font-size:1.8em; top:-25px; letter-spacing: 0;}
+	#works .section01 .work-content .number {left:22%;}
+	#works .section02 .work-content .number {left:20%;}
+	#works .section03 .work-content .number {left:0;}
+	#works .section04 .work-content .number {left:0;}
+	#works .section .thumb img {width:95%;}
+	#works .section01 .thumb img, #works .section04 .thumb img {width:85%;}
+	#contact::before {top:-35px; height:140px;}
+	#contact .contact-box {width:70%; font-size:16px;}
+	#footer {font-size:13px;}
+}
+/* Mobile2 */
+@media screen and (max-width: 480px){
+	#main-visual .main-visual-wrap {height:65vh;}
+	#main-visual .inner div h2 {font-size:2.5em;}
+	#intro .intro-wrap .intro-title {font-size:1.2em;}
+	.main-title {font-size:1.3em;}
+	#skills {margin-top:40%;}
+	#works {margin-top:30%;}
+	#skills ul li .percent {font-size:13px; top:37%;}
+	#skills ul li h4 {font-size:12px;}
+	#works .section01 {margin-top:10%;}
+	#works .section .work-content h2 {font-size:1.6em;}
+	#works .section .work-content p {font-size:13px;}
+	#works .section .work-content .number {font-size:1.4em; top:-15px;}
+	#contact .contact-box {width:60%; font-size:14px;}
+	#footer {font-size:11px;}
+}
+@media screen and (max-width: 380px){
+	#skills ul li .percent {font-size:12px; top:36%;}
+	#contact .contact-box {width:60%; font-size:12px;}
+}
