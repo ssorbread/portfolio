@@ -153,9 +153,7 @@ body { margin: 0; padding: 0; min-width: 320px; background:#f3f3f3; font-size: 1
 	#works .section .thumb {width:100%; float:none;}
 	#works .section .work-content {width:65%; margin:0 auto; float:none; text-align:center;}
 	#works .section .work-content .btn-area a {float:none; margin:0 auto;}
-	#works .section01 .work-content .number {left:22%; right:auto;}
-	#works .section02 .work-content .number {left:20%;}
-	#works .section03 .work-content .number {left:0; right:auto;}
+	#works .section .work-content .number {display:none;}
 	#works .section04 {margin-bottom:10%;}
 	#works .section04 .work-content .number {left:0; right:auto;}
 	#contact {padding-bottom:10%;}
@@ -175,11 +173,6 @@ body { margin: 0; padding: 0; min-width: 320px; background:#f3f3f3; font-size: 1
 	#skills ul li canvas {width:70%!important; height:70%!important;}
 	#skills ul li .percent {font-size:16px; top:39%;}
 	#works .section .work-content h2 {font-size:1.8em;}
-	#works .section .work-content .number {font-size:1.8em; top:-25px; letter-spacing: 0;}
-	#works .section01 .work-content .number {left:22%;}
-	#works .section02 .work-content .number {left:20%;}
-	#works .section03 .work-content .number {left:0;}
-	#works .section04 .work-content .number {left:0;}
 	#works .section .thumb img {width:95%;}
 	#works .section01 .thumb img, #works .section04 .thumb img {width:85%;}
 	#contact::before {top:-35px; height:140px;}
@@ -199,7 +192,6 @@ body { margin: 0; padding: 0; min-width: 320px; background:#f3f3f3; font-size: 1
 	#works .section01 {margin-top:10%;}
 	#works .section .work-content h2 {font-size:1.6em;}
 	#works .section .work-content p {font-size:13px;}
-	#works .section .work-content .number {font-size:1.4em; top:-15px;}
 	#contact .contact-box {width:60%; font-size:14px;}
 	#footer {font-size:11px;}
 }
