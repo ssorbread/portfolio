@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+        <meta property="og:type" content="website"> 
+        <meta property="og:title" content="김소라의 웹퍼블리셔 포트폴리오입니다.">
+        <meta property="og:image" content="common/images/share_img.png">
+        <link type="text/css" rel="stylesheet" href="common/css/aos.css" />
+        <link type="text/css" rel="stylesheet" href="common/css/fonts.css" />
+        <link type="text/css" rel="stylesheet" href="common/css/base.css" />
+        <link type="text/css" rel="stylesheet" href="common/css/layout.css" />
+        <link type="text/css" rel="stylesheet" href="common/css/main.css" />
+
+        <title>소라빵의 포트폴리오 제빵기</title>
+    </head>
+    
+    <body>
+        <header id="header" class="flex flex_js ag_c">
+            <div class="logo flex ag_c"><span class="dot"></span>SSORB.dev</div>
+            <nav class="flex ag_c">
+              <a href="#about">About</a>
+              <a href="#skills">Skills</a>
+              <a href="#work">Work</a>
+              <a href="#contact" class="nav-cta">Contact</a>
+            </nav>
+        </header>
+
+        <main>
+            <section class="visual flex flex_col ag_c flex_center">
+                <div class="orb" aria-hidden="true"></div>
+
+                <div class="inner" data-aos="fade-in">
+                    <div class="hero-head taC">
+                        <p class="badge"><span class="pulse"></span>Design to Code</p>
+                        <h1>안녕하세요,<br /><span class="grad">무엇이 궁금하신가요?</span></h1>
+                        <p class="sub">반갑습니다! 웹퍼블리셔 김소라의 포트폴리오입니다.</p>
+                    </div>
+
+                    <div class="chat flex flex_col" id="chat" aria-live="polite"></div>
+
+                    <form class="prompt flex ag_c" id="promptForm" autocomplete="off">
+                        <input id="promptInput" type="text" placeholder="예) 어떤 기술을 다룰 수 있나요?" aria-label="질문 입력" />
+                        <button type="submit" aria-label="보내기">
+                            <svg viewBox="0 0 24 24" width="18" height="18"><path d="M12 19V5M5 12l7-7 7 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                        </button>
+                    </form>
+
+                    <div class="chips">
+                        <button data-q="자기소개 해주세요">👋 자기소개</button>
+                        <button data-q="어떤 기술을 다룰 수 있나요?">🛠 보유 기술</button>
+                        <button data-q="대표 프로젝트 보여주세요">📁 대표 프로젝트</button>
+                        <button data-q="연락하고 싶어요">✉️ 연락하기</button>
+                    </div>
+                </div>
+            </section>
+
+            <section id="about" class="about">
+                <div class="inner flex flex_col">
+                    <div class="tit" data-aos="fade-in">about</div>
+
+                    <div class="box flex gap20" data-aos="zoom-in">
+                        <div class="box02 flex flex_col gap20">
+                            <h4 class="flex ag_c gap10">Profession</h4>
+                            <ul class="flex flex_col gap20">
+                                <li class="flex ag_c">
+                                    <strong>시스게이트 / <span class="txt_color">2014.05 - 2015.05</span></strong>
+                                    <p class="w100">서버관리(삼성카드 백업)</p>
+                                </li>
+                                <li class="flex ag_c">
+                                    <strong>로바디자인 / <span class="txt_color">2015.12 - 2019.06</span></strong>
+                                    <p class="w100">웹퍼블리셔 근무</p>
+                                </li>
+                                <li class="flex ag_c">
+                                    <strong>메이크굿 / <span class="txt_color">2020.02 ~</span></strong>
+                                    <p class="w100">웹퍼블리셔 근무 - <strong>재직중</strong></p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="box01 flex flex_col gap20">
+                            <h4 class="flex ag_c gap10">School</h4>
+                            <ul class="flex flex_col gap20">
+                                <li class="flex ag_c">
+                                    <strong>영진전문대학 / <span class="txt_color">2011.03 - 2015.02</span></strong>
+                                    <p class="w100">컴퓨터정보계열 프로그래밍전공</p>
+                                </li>
+                                <li class="flex ag_c">
+                                    <strong>경원직업전문학교 / <span class="txt_color">2015.06 - 2015.12</span></strong>
+                                    <p class="w100">크로스브라우징&amp;디지털퍼블리싱 수료</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="box03 flex flex_col gap20">
+                            <h4 class="flex ag_c gap10">Study</h4>
+                            <ul class="flex flex_col gap20">
+                                <li class="flex ag_c">
+                                    <strong>TIS직업전문학교 / <span class="txt_color">2016.10 - 2016.11</span></strong>
+                                    <p class="w100">웹표준&반응형웹을 위한 웹퍼블리셔 과정</p>
+                                </li>
+                                <li class="flex ag_c">
+                                    <strong>코딩애플 / <span class="txt_color">2017.11 - 2017.12</span></strong>
+                                    <p class="w100">HTML,CSS,JAVASCRIPT를 이용한 반응형 개발 실전과정</p>
+                                </li>
+                                <li class="flex ag_c">
+                                    <strong>더조은 아카데미학원 / <span class="txt_color">2019.01 - 2019.03</span></strong>
+                                    <p class="w100">웹퍼블리셔-JQUERY&JAVAscript 중급</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="box04 flex flex_col gap20">
+                            <h4 class="flex ag_c gap10">Certificate</h4>
+                            <ul class="flex flex_col gap20">
+                                <li class="flex ag_c">
+                                    <strong>(국가공인)정보기술자격(ITQ) / <span class="txt_color">2012.09</span></strong>
+                                </li>
+                                <li class="flex ag_c">
+                                    <strong>웹디자인 기능사 / <span class="txt_color">2015.09</span></strong>
+                                </li>
+                                <li class="flex ag_c">
+                                    <strong>컴퓨터그래픽스 운용기능사 / <span class="txt_color">2015.10</span></strong>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="skills" class="skills">
+                <div class="inner flex flex_col">
+                    <div class="tit" data-aos="fade-in">skills</div>
+
+                    <div class="grid" data-aos="zoom-in">
+                        <div class="item flex flex_col">
+                            <div class="num">01 /</div>
+                            <h4>MARKUP</h4>
+                            <p>HTML5 · 웹접근성 · 웹표준</p>
+                        </div>
+                        <div class="item flex flex_col">
+                            <div class="num">02 /</div>
+                            <h4>STYLE</h4>
+                            <p>CSS3 · 반응형 · 애니메이션</p>
+                        </div>
+                        <div class="item flex flex_col">
+                            <div class="num">03 /</div>
+                            <h4>SCRIPT</h4>
+                            <p>JavaScript · jQuery · GSAP · Swiper</p>
+                        </div>
+                        <div class="item flex flex_col">
+                            <div class="num">04 /</div>
+                            <h4>Design TOOL</h4>
+                            <p>Figma · Zeplin</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="work" class="work">
+                <div class="inner flex flex_col">
+                    <div class="tit" data-aos="fade-in">work</div>
+
+                    <div class="tabs flex flex_center gap10" data-aos="fade-up">
+                        <button type="button" data-val="" class="active">전체</button>
+                        <button type="button" data-val="web">웹사이트</button>
+                        <button type="button" data-val="app">모바일</button>
+                        <button type="button" data-val="public">공공기관</button>
+                        <button type="button" data-val="shopping">쇼핑몰</button>
+                    </div>
+
+                    <div class="list" data-aos="fade-up">
+                        <div class="item web">
+                            <a href="https://himaroo.makegood.co.kr/" target="_blank">
+                                <div class="thumb"><img src="common/images/portfolio/project_himaroo.png" alt="하이마루"></div>
+                                <div class="text">하이마루엔터</div>
+                            </a>
+                        </div>
+                        <div class="item web">
+                            <a href="https://a1korea.makegood.co.kr/" target="_blank">
+                                <div class="thumb"><img src="common/images/portfolio/project_a1korea.png" alt="A1코리아"></div>
+                                <div class="text">A1코리아</div>
+                            </a>
+                        </div>
+                        <div class="item web">
+                            <a href="https://apstick.makegood.co.kr/" target="_blank">
+                                <div class="thumb"><img src="common/images/portfolio/project_apstick.png" alt="AP STICK"></div>
+                                <div class="text">AP STICK</div>
+                            </a>
+                        </div>
+                        <div class="item web">
+                            <a href="https://avp.makegood.co.kr/" target="_blank">
+                                <div class="thumb"><img src="common/images/portfolio/project_avp.png" alt="AVP"></div>
+                                <div class="text">AVP</div>
+                            </a>
+                        </div>
+                        <div class="item app">
+                            <a href="https://lura.makegood.co.kr/" target="_blank">
+                                <div class="thumb"><img src="common/images/portfolio/project_lura.png" alt="LURA"></div>
+                                <div class="text">LURA</div>
+                            </a>
+                        </div>
+                        <div class="item web">
+                            <a href="https://msa.makegood.co.kr/" target="_blank">
+                                <div class="thumb"><img src="common/images/portfolio/project_msa.png" alt="MS-A"></div>
+                                <div class="text">MS-A</div>
+                            </a>
+                        </div>
+                        <div class="item shopping">
+                            <a href="https://yeym.shop/" target="_blank">
+                                <div class="thumb"><img src="common/images/portfolio/project_yeym.png" alt="YEYM"></div>
+                                <div class="text">Yeym</div>
+                            </a>
+                        </div>
+                        <div class="item public">
+                            <a href="https://makegood.makegood.co.kr/bcww/templates/index.html" target="_blank">
+                                <div class="thumb"><img src="common/images/portfolio/project_bcww.png" alt="BCWW2020"></div>
+                                <div class="text">BCWW2020</div>
+                            </a>
+                        </div>
+                        <div class="item web">
+                            <a href="https://yourbean.makegood.co.kr/" target="_blank">
+                                <div class="thumb"><img src="common/images/portfolio/project_yourbean.png" alt="YOURBEAN"></div>
+                                <div class="text">YOURBEAN</div>
+                            </a>
+                        </div>
+                        <div class="item shopping">
+                            <a href="https://seshohoho.cafe24.com/" target="_blank">
+                                <div class="thumb"><img src="common/images/portfolio/project_glovetree.png" alt="글러브트리"></div>
+                                <div class="text">글러브트리</div>
+                            </a>
+                        </div>
+                        <div class="item shopping">
+                            <a href="https://becky156.cafe24.com/" target="_blank">
+                                <div class="thumb"><img src="common/images/portfolio/project_monohour.png" alt="모노아워"></div>
+                                <div class="text">모노아워</div>
+                            </a>
+                        </div>
+                        <div class="item web">
+                            <a href="https://hyosung.makegood.co.kr/" target="_blank">
+                                <div class="thumb"><img src="common/images/portfolio/project_hyosung.png" alt="효성"></div>
+                                <div class="text">법무법인 효성</div>
+                            </a>
+                        </div>
+                        <div class="item public">
+                            <a href="https://makegood.makegood.co.kr/innocon/templates/kr/index.html" target="_blank">
+                                <div class="thumb"><img src="common/images/portfolio/project_innocon.png" alt="이노콘2020"></div>
+                                <div class="text">이노콘2020</div>
+                            </a>
+                        </div>
+                        <div class="item shopping">
+                            <a href="https://behrpro.cafe24.com/" target="_blank">
+                                <div class="thumb"><img src="common/images/portfolio/project_behr.png" alt="베어프로젝트"></div>
+                                <div class="text">베어프로젝트</div>
+                            </a>
+                        </div>
+                        <div class="item public">
+                            <a href="https://sfcp2021.makegood.co.kr/kr/" target="_blank">
+                                <div class="thumb"><img src="common/images/portfolio/project_seoul.png" alt="서울시민참여포럼2021"></div>
+                                <div class="text">서울시민참여포럼2021</div>
+                            </a>
+                        </div>
+                        <div class="item public">
+                            <a href="https://sehangyo.makegood.co.kr/index.php" target="_blank">
+                                <div class="thumb"><img src="common/images/portfolio/project_sehangyo.png" alt="세계한국어교육자대회2022"></div>
+                                <div class="text">세계한국어교육자대회2022</div>
+                            </a>
+                        </div>
+                        <div class="item public">
+                            <a href="https://wcokl20221.makegood.co.kr/" target="_blank">
+                                <div class="thumb"><img src="common/images/portfolio/project_korea.png" alt="세계한국어한마당2022"></div>
+                                <div class="text">세계한국어한마당 2022</div>
+                            </a>
+                        </div>
+                        <div class="item web">
+                            <a href="https://cmax.makegood.co.kr/" target="_blank">
+                                <div class="thumb"><img src="common/images/portfolio/project_cmax.png" alt="씨맥스코리아"></div>
+                                <div class="text">씨맥스코리아</div>
+                            </a>
+                        </div>
+                        <div class="item shopping">
+                            <a href="https://iceoddugi.cafe24.com/" target="_blank">
+                                <div class="thumb"><img src="common/images/portfolio/project_oddugi.png" alt="오뚜기식당"></div>
+                                <div class="text">오뚜기식당</div>
+                            </a>
+                        </div>
+                        <div class="item app">
+                            <a href="https://yotu.makegood.co.kr/" target="_blank">
+                                <div class="thumb"><img src="common/images/portfolio/project_yotu.png" alt="요투"></div>
+                                <div class="text">요투</div>
+                            </a>
+                        </div>
+                        <div class="item web">
+                            <a href="https://koreahealth.makegood.co.kr/" target="_blank">
+                                <div class="thumb"><img src="common/images/portfolio/project_koreahealth.png" alt="코리아헬스"></div>
+                                <div class="text">코리아헬스</div>
+                            </a>
+                        </div>
+                        <div class="item web">
+                            <a href="https://petarium.makegood.co.kr/" target="_blank">
+                                <div class="thumb"><img src="common/images/portfolio/project_petarium.png" alt="페타리움"></div>
+                                <div class="text">페타리움</div>
+                            </a>
+                        </div>
+                        <div class="item web">
+                            <a href="https://proscent.makegood.co.kr/" target="_blank">
+                                <div class="thumb"><img src="common/images/portfolio/project_proscent.png" alt="프로센트"></div>
+                                <div class="text">프로센트</div>
+                            </a>
+                        </div>
+                        <div class="item app">
+                            <a href="https://pick.makegood.co.kr/" target="_blank">
+                                <div class="thumb"><img src="common/images/portfolio/project_pick.png" alt="픽앤"></div>
+                                <div class="text">픽앤</div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="contact">
+                <div class="inner flex flex_col">
+                    <div class="tit" data-aos="fade-in">contact</div>
+
+                    <div class="card flex flex_col" data-aos="zoom-in">
+                        <h4 class="txt_color">PORTFOLIO</h4>
+                        <div class="name"><strong>김 소 라</strong><span>Web Publisher</span></div>
+                        <div class="tel"><strong>Tel</strong> : 010-5471-5429</div>
+                        <div class="mail"><strong>E-mail</strong> : srk90@naver.com</div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer id="footer" class="taC">Copyright © <strong>Kimsora</strong>. All Rights Reserved.</footer>
+
+
+        <script src="common/js/jquery.min.js"></script>
+        <script src="common/js/aos.js"></script>
+        <script src="common/js/script.js"></script>
+
+
+        <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const tabs = document.querySelectorAll('.work .tabs button');
+            const items = document.querySelectorAll('.work .item');
+
+            function filterItems(val) {
+                items.forEach(function (item) {
+                    if (!val || item.classList.contains(val)) {
+                        item.style.display = 'block';
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            }
+
+            tabs.forEach(function (tab) {
+                tab.addEventListener('click', function () {
+                    tabs.forEach(function (t) { t.classList.remove('active'); });
+                    this.classList.add('active');
+                    filterItems(this.dataset.val);
+                });
+            });
+
+            // 처음 로드될 때 active 탭 기준으로 적용
+            const activeTab = document.querySelector('.work .tabs button.active');
+            filterItems(activeTab ? activeTab.dataset.val : '');
+        });
+        </script>
+    </body>
+</html>
